@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED538454-97E9-7F51-9AA0-84BA17FFC304" name="Prowadzacy_przedmioty">
+<createdBy>Hubert</createdBy>
+<createdTime>2022-05-28 12:35:09 UTC</createdTime>
+<ownerDesignName>model_logiczny</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="konkretny_przedmiot_id" id="E1F2AC5F-34C4-FCBE-AA93-A8F130AC336C">
+<createdBy>Hubert</createdBy>
+<createdTime>2022-05-28 12:43:48 UTC</createdTime>
+<ownerDesignName>model_logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nauczyciel_id" id="A0DCF902-1906-D321-E4EA-E5768F45183F">
+<createdBy>Hubert</createdBy>
+<createdTime>2022-05-28 12:35:09 UTC</createdTime>
+<ownerDesignName>model_logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49A63391-3D16-6159-03CC-02EA034ED909" referredColumn="CAE4CE67-5240-DE73-5B38-040B5DC4BD91"/>
+</associations>
+</Column>
+<Column name="przedmiot_id" id="C058F408-AA90-EB57-63E7-C8C4C9F62C2A">
+<createdBy>Hubert</createdBy>
+<createdTime>2022-05-28 12:35:09 UTC</createdTime>
+<ownerDesignName>model_logiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE789994-9894-0432-CDED-BB234D81D0AE" referredColumn="77D2D8E9-B738-E821-A34E-638E24A7B75D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EEBCECC4-AE06-B9CD-A916-C0B353AF1A5C" name="Prowadzacy_przedmioty_PK">
+<createdBy>Hubert</createdBy>
+<createdTime>2022-05-28 12:35:09 UTC</createdTime>
+<ownerDesignName>model_logiczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1F2AC5F-34C4-FCBE-AA93-A8F130AC336C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A19E72FD-E62B-A4D6-A5E5-2E4665D695D7" name="Nauczyciele_FK">
+<createdBy>Hubert</createdBy>
+<createdTime>2022-05-28 12:35:09 UTC</createdTime>
+<generatorID>72CD6EAA-A95F-371C-E88A-F969591A3105</generatorID>
+<ownerDesignName>model_logiczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0DCF902-1906-D321-E4EA-E5768F45183F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB7B928B-A081-8662-F9C6-3A45B3EE252C" name="Przedmioty_FK">
+<createdBy>Hubert</createdBy>
+<createdTime>2022-05-28 12:35:09 UTC</createdTime>
+<generatorID>72CD6EAA-A95F-371C-E88A-F969591A3105</generatorID>
+<ownerDesignName>model_logiczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C058F408-AA90-EB57-63E7-C8C4C9F62C2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
