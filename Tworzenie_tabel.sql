@@ -64,7 +64,7 @@ CREATE TABLE oceny_uczniow (
     ocena_id               NUMBER NOT NULL,
     data_wystawienia       DATE NOT NULL,
     konkretny_przedmiot_id NUMBER NOT NULL,
-    komentarz              CLOB
+    komentarz              VARCHAR(150)
 );
 
 ALTER TABLE oceny_uczniow ADD CONSTRAINT oceny_uczniow_pk PRIMARY KEY ( konkretna_ocena_id );
