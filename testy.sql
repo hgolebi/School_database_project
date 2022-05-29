@@ -29,9 +29,26 @@ UPDATE Oceny_uczniow
 SET ocena_id = 4, konkretny_przedmiot_id = 2 
 WHERE uczen_id = 1;
 
-
 -- zapytanie, zwracajace ilu uczniow chodzi do danej klasy
 SELECT klasa_id, COUNT(uczen_id)
 FROM uczniowie
 GROUP BY klasa_id
 ORDER BY klasa_id asc;
+
+-- zapytanie zwracajace id ucznia i ocene z danego przedmiotu z nazwa
+SELECT o.uczen_id, o.ocena_id, p.nazwa FROM OCENY_UCZNIOW o JOIN KONKRETNE_PRZEDMIOTY k ON (o.konkretny_przedmiot_id = k.konkretny_przedmiot_id) JOIN PRZEDMIOTY p ON (k.przedmiot_id = p.przedmiot_id)
+ORDER BY o.uczen_id;
+
+-- zapytanie wyswietlajace nauczyciela z odpowiadajaca mu nazwa przedmiotu
+BEGIN
+    FOR r_nau IN (SELECT n.imie as imie, n.nazwisko as nazwisko,
+         p.nazwa as nazwa
+         FROM nauczyciele n JOIN
+         konkretne_przedmioty k USING (nauczyciel_id) JOIN
+         przedmioty p USING (przedmiot_id))
+    LOOP
+         dbms_output.put_line('Dane nauczyciela: ' || r_nau.imie || ' ' || r_nau.nazwisko
+         || ' ' || r_nau.nazwa);
+    END LOOP;
+END;
+
