@@ -1,5 +1,5 @@
 package BazaDanych;
-
+sadfas
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.HeadlessException;
@@ -37,8 +37,8 @@ public class BazaDanych extends JFrame implements ActionListener {
 
 	public BazaDanych() throws HeadlessException, SQLException {
 		
-		textField = new JTextField("Wpisz kwerendê");
-		jButton = new JButton("Wykonaj kwerendê");
+		textField = new JTextField("Wpisz kwerendï¿½");
+		jButton = new JButton("Wykonaj kwerendï¿½");
 		jTextArea = new JTextArea("");
 		
 		scroll = new JScrollPane(jTextArea, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
@@ -62,7 +62,7 @@ public class BazaDanych extends JFrame implements ActionListener {
 	    boolean isConnected = false;
 	    try {
 	    	conn = DriverManager.getConnection("jdbc:oracle:thin:@//ora4.ii.pw.edu.pl:1521/pdb1.ii.pw.edu.pl", username, password);
-	        final PreparedStatement statement = conn.prepareStatement(CHECK_SQL_QUERY);
+//	        final PreparedStatement statement = conn.prepareStatement(CHECK_SQL_QUERY);
 	        isConnected = true;
 	    } catch (SQLException | NullPointerException e) {
 	    	JOptionPane.showMessageDialog(null, "The username or password is wrong. Try again", "Error", JOptionPane.PLAIN_MESSAGE);
@@ -71,28 +71,28 @@ public class BazaDanych extends JFrame implements ActionListener {
 	}
 	
 	public static void main(String[] args) throws SQLException {
-		
-			BazaDanych frame = new BazaDanych();
-			username = JOptionPane.showInputDialog("What is your username?: ");
-			password = JOptionPane.showInputDialog("What is your password?: ");
-			if (password != null || username != null)
-			{
-				while (!isDbConnected())
-				{
-					username = JOptionPane.showInputDialog("What is your username?: ");
-					password = JOptionPane.showInputDialog("What is your password?: ");
-					if (password == null || username == null)
-					{
-						System.exit(0);
-					}
-				}
-			}
-			else
-			{
-				System.exit(0);
-			}
-		
-		frame.setVisible(true);	
+			
+//			BazaDanych frame = new BazaDanych();
+//			username = JOptionPane.showInputDialog("What is your username?: ");
+//			password = JOptionPane.showInputDialog("What is your password?: ");
+//			if (password != null || username != null)
+//			{
+//				while (!isDbConnected())
+//				{
+//					username = JOptionPane.showInputDialog("What is your username?: ");
+//					password = JOptionPane.showInputDialog("What is your password?: ");
+//					if (password == null || username == null)
+//					{
+//						System.exit(0);
+//					}
+//				}
+//			}
+//			else
+//			{
+//				System.exit(0);
+//			}
+//		
+//		frame.setVisible(true);	
 		
     }
 	
