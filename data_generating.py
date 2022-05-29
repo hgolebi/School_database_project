@@ -94,25 +94,30 @@ def konkretne_przedmioty():
     file.close
 
 def oceny():
-    oceny = ['niedostateczna', 'dopuszczjaca', "dostateczna", 'dobra', "bardzo dobra", 'celujaca']
-    for i in range(6):
+    file = open("Wstawianie_danych.sql", 'a')
+    file.write("ALTER SESSION SET NLS_DATE_FORMAT = \"DD/MM/YYYY\";\n")
+    file.write("-----------\n")
+    oceny = ['niedostateczna', 'dopuszczjaca minus', 'dopuszczjaca', 'dopuszczjaca plus', "dostateczna minus", "dostateczna", "dostateczna plus", 'dobra minus','dobra', 'dobra plus', "bardzo dobra minus", "bardzo dobra", "bardzo dobra plus", 'celujaca minus', 'celujaca']
+    oce_licz = [1, 1.75, 2, 2.5, 2.75, 3, 3.5, 3.75, 4, 4.5, 4.75, 5, 5.5, 5.75, 6]
+    for i in range(15):
         id = i + 1
         name = oceny[i]
+        licz = oce_licz[i]
         text = 'INSERT INTO Oceny VALUES '
-        text += f'({id}, {id}, \'{name}\');\n'
-        file = open("Wstawianie_danych.sql", 'a')
+        text += f'({id}, {licz}, \'{name}\');\n'
         file.write(text)
     file.write("-----------\n")
     file.close
 
 def oceny_uczniow():
-    id = 24
-    for kl in range (12):
-        for u in range (15):
+    id = 0
+
+    for u in range (15):
+        u_id = u + 1
+        p_id = 1
+        for i in range(3):
             id += 1
-            u_id = kl*15 + u + 1
-            p_id = randrange(kl*6+1, kl*6+6)
-            oc = randrange(1, 6)
+            oc = randrange(1, 15)
             dd = randrange(10, 30)
             mm = randrange(10, 12)
             rr = 2022
@@ -123,9 +128,8 @@ def oceny_uczniow():
     file.write("-----------\n")
     file.close
 
-file = open("Wstawianie_danych.sql", 'a')
-file.write("ALTER SESSION SET NLS_DATE_FORMAT = \"DD/MM/YYYY\";\n")
-file.write("-----------\n")
+
+
 
 oceny()
 nauczyciele()
