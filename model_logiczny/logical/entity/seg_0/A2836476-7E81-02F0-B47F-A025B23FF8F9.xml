@@ -1,7 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="491A8091-A5AB-844A-C49B-374F495CBBB1" name="Klasy">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A2836476-7E81-02F0-B47F-A025B23FF8F9" name="Dyrektorowie">
 <createdBy>Hubert</createdBy>
-<createdTime>2022-05-28 12:14:40 UTC</createdTime>
+<createdTime>2022-05-29 12:10:45 UTC</createdTime>
+<generatorID>01BC3B03-1F58-09DD-A7F0-07A7D2281F0F</generatorID>
 <ownerDesignName>model_logiczny</ownerDesignName>
 <engineerTo>
 <item key="55813666-262F-D829-2D71-6BE213D3052D" value="true"/>
@@ -15,9 +16,10 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="klasa id" id="BC296FE4-13C4-0558-1410-4A0FDABD373F">
+<Attribute name="dyrektor id" id="8706D8F2-D801-37C6-2BB4-79A420C66ACF">
 <createdBy>Hubert</createdBy>
-<createdTime>2022-05-28 12:14:51 UTC</createdTime>
+<createdTime>2022-05-29 12:10:45 UTC</createdTime>
+<generatorID>23807D1B-1D46-4241-6E73-0183FCE6E790</generatorID>
 <ownerDesignName>model_logiczny</ownerDesignName>
 <engineerTo>
 <item key="55813666-262F-D829-2D71-6BE213D3052D" value="true"/>
@@ -27,36 +29,37 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="rok" id="76F4C698-5A19-89F0-4BE1-062375281BA8">
+<Attribute name="data rozpoczecia" id="6B25B38C-1D49-312E-12FF-8AE3F8272A7E">
 <createdBy>Hubert</createdBy>
-<createdTime>2022-05-28 12:15:02 UTC</createdTime>
+<createdTime>2022-05-29 12:10:45 UTC</createdTime>
+<generatorID>D046C7E3-5E06-10BB-3B7D-E781DF40B0C1</generatorID>
 <ownerDesignName>model_logiczny</ownerDesignName>
 <engineerTo>
 <item key="55813666-262F-D829-2D71-6BE213D3052D" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,,1</ownDataTypeParameters>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="litera" id="EB915C21-C682-EDF7-3C46-062A8E0DDCB9">
+<Attribute name="data zakonczenia" id="B905743B-2AF8-80B2-1F26-5D7BD1B062E1">
 <createdBy>Hubert</createdBy>
-<createdTime>2022-05-28 12:15:46 UTC</createdTime>
+<createdTime>2022-05-29 12:10:45 UTC</createdTime>
+<generatorID>715BB697-DAE2-519C-15A3-6124376DC9D4</generatorID>
 <ownerDesignName>model_logiczny</ownerDesignName>
 <engineerTo>
 <item key="55813666-262F-D829-2D71-6BE213D3052D" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="wychowawca id" id="939223C2-9B04-5138-9BB9-0710E0A12B0C">
+<Attribute name="nauczyciel id" id="E425E788-97C2-4878-94C3-F5D437F6E638">
 <createdBy>Hubert</createdBy>
-<createdTime>2022-05-28 12:29:57 UTC</createdTime>
-<generatorID>B0BE944B-70E0-CD34-2DDB-AD0E98FE87F8</generatorID>
+<createdTime>2022-05-29 12:10:45 UTC</createdTime>
+<generatorID>7B795B8B-30C3-9CFE-60B8-DBD9AD1CAD84</generatorID>
 <ownerDesignName>model_logiczny</ownerDesignName>
 <engineerTo>
 <item key="55813666-262F-D829-2D71-6BE213D3052D" value="true"/>
@@ -67,33 +70,19 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="uczen id" id="4D7E06E2-5B6C-8389-6AB7-B4B3087FFA03">
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EF20631A-638C-ACA2-0EBE-F97E7EB63792" name="Dyrektorowie PK">
 <createdBy>Hubert</createdBy>
-<createdTime>2022-05-28 13:18:45 UTC</createdTime>
-<generatorID>74810409-1B27-EC81-F7B4-D549BE88232B</generatorID>
+<createdTime>2022-05-29 12:10:45 UTC</createdTime>
+<generatorID>AB288C77-2034-B4BA-B69A-57DB173438AE</generatorID>
 <ownerDesignName>model_logiczny</ownerDesignName>
 <engineerTo>
 <item key="55813666-262F-D829-2D71-6BE213D3052D" value="true"/>
 </engineerTo>
-<referedAttribute>75944B6A-036F-CB04-1E12-F6BC6E19153C</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-</attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="4E24C857-C8BC-5215-DB53-259E95D5FECB" name="Klasy PK">
-<createdBy>Hubert</createdBy>
-<createdTime>2022-05-28 12:15:36 UTC</createdTime>
-<ownerDesignName>model_logiczny</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
-<engineerTo>
-<item key="55813666-262F-D829-2D71-6BE213D3052D" value="false"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>BC296FE4-13C4-0558-1410-4A0FDABD373F</attributeRef>
+<attributeRef>8706D8F2-D801-37C6-2BB4-79A420C66ACF</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

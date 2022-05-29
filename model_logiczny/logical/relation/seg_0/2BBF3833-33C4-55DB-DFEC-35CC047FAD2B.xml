@@ -80,5 +80,17 @@
 <logicalDatatype>LOGDT040</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </attribute>
+<attribute name="Oceny ocena id" id="4C77D21F-76E5-A050-57A1-546B34AA96B8">
+<createdBy>Hubert</createdBy>
+<createdTime>2022-05-29 12:10:45 UTC</createdTime>
+<ownerDesignName>model_logiczny</ownerDesignName>
+<engineerTo>
+<item key="55813666-262F-D829-2D71-6BE213D3052D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
 </attributes>
 </Relation>

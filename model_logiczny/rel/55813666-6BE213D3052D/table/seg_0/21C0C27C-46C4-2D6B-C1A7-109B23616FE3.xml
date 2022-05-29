@@ -13,7 +13,6 @@
 <createdTime>2022-05-28 12:35:09 UTC</createdTime>
 <generatorID>F431A944-512F-2B16-18A7-2CD3ECD27C46</generatorID>
 <ownerDesignName>model_logiczny</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -47,19 +46,6 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Oceny_ID" id="19395DFE-630E-B49B-A661-1619530021CF">
-<createdBy>Hubert</createdBy>
-<createdTime>2022-05-28 12:35:09 UTC</createdTime>
-<ownerDesignName>model_logiczny</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementColumn>true</autoIncrementColumn>
-<identityColumn>true</identityColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<isSurrogateColumn>true</isSurrogateColumn>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="CE3B5435-0A5B-3337-F909-A06B5CBBD858" name="Oceny_PK">
@@ -69,7 +55,7 @@
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <indexColumnUsage>
-<colUsage columnID="19395DFE-630E-B49B-A661-1619530021CF"/>
+<colUsage columnID="86667C45-DA54-D953-77A3-D520E639E377"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

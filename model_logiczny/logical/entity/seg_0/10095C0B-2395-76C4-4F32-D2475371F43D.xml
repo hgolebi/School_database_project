@@ -22,7 +22,6 @@
 <engineerTo>
 <item key="55813666-262F-D829-2D71-6BE213D3052D" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

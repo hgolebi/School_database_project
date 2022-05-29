@@ -1,3 +1,5 @@
+ALTER SESSION SET NLS_DATE_FORMAT = "DD/MM/YYYY";
+------------
 INSERT INTO Oceny VALUES (1, 1, 'niedostateczna');
 INSERT INTO Oceny VALUES (2, 2, 'dopuszczjaca');
 INSERT INTO Oceny VALUES (3, 3, 'dostateczna');
@@ -485,5 +487,6 @@ INSERT INTO Oceny_uczniow VALUES (202, 178, 4, '17/11/2022', 70, null);
 INSERT INTO Oceny_uczniow VALUES (203, 179, 1, '24/10/2022', 70, null);
 INSERT INTO Oceny_uczniow VALUES (204, 180, 2, '23/10/2022', 71, null);
 -----------
-ALTER SESSION SET NLS_DATE_FORMAT = "DD/MM/YYYY";
+INSERT INTO Dyrektorowie VALUES (1, '01/09/2000', null, 1);
 -----------
+commit;
