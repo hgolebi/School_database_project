@@ -66,7 +66,7 @@ AS
     klasa           Klasy.klasa_id%type;
     konkr_przedmiot Konkretne_przedmioty.konkretny_przedmiot_id%type;
     licznik         NUMBER(3)       := 0;
-    srednia         NUMBER(3, 2)    := 0;
+    srednia         NUMBER(6, 2)    := 0;
     
     
 BEGIN

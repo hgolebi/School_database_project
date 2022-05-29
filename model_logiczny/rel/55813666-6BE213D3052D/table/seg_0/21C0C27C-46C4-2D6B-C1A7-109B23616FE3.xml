@@ -16,8 +16,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypeScale>1</dataTypeScale>
-<ownDataTypeParameters>,,1</ownDataTypeParameters>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="liczba" id="EFAB16D9-0614-43EF-F284-BE2984DB2BD7">
