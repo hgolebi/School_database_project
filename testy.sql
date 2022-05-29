@@ -52,3 +52,6 @@ BEGIN
     END LOOP;
 END;
 
+-- wyswietlenie daty rozpoczecia i daty zakonczenia dla nauczyciela, jezeli jest dyrektorem
+SELECT n.nauczyciel_id, n.imie, n.nazwisko, n.data_dolaczenia, d.dyrektor_id, d.data_rozpoczecia, d.data_zakonczenia FROM nauczyciele n LEFT JOIN dyrektorowie d ON (n.nauczyciel_id = d.nauczyciel_id);
+
